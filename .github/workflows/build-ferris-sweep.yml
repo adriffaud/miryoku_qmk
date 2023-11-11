@@ -1,0 +1,11 @@
+name: "Build ferris/sweep"
+on:
+    - workflow_dispatch
+jobs:
+    build:
+        uses: ./.github/workflows/main.yml
+        with:
+            keyboard: '["ferris/sweep"]'
+            # alphas: '["qwerty"]'
+            nav: '["vi"]'
+            clipboard: '["Win"]'

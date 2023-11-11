@@ -1,6 +1,10 @@
 name: "Build ferris/sweep"
 on:
-    - workflow_dispatch
+    workflow_dispatch:
+    push:
+        branches:
+            - miryoku
+
 jobs:
     build:
         uses: ./.github/workflows/main.yml
